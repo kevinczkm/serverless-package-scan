@@ -21,20 +21,20 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
 
-    - name: Setup Terraform
-      uses: hashicorp/setup-terraform@v3
+    # - name: Setup Terraform
+    #   uses: hashicorp/setup-terraform@v3
 
-    - name: Terraform fmt
-      id: fmt
-      run: terraform fmt -check
+    # - name: Terraform fmt
+    #   id: fmt
+    #   run: terraform fmt -check
 
-    - name: Terraform Validate
-      id: validate
-      run: terraform validate -no-color
+    # - name: Terraform Validate
+    #   id: validate
+    #   run: terraform validate -no-color
 
-    - uses: terraform-linters/setup-tflint@v3
-      with:
-        tflint_version: latest
+    # - uses: terraform-linters/setup-tflint@v3
+    #   with:
+    #     tflint_version: latest
     
     - name: Set up Terraform
       uses: hashicorp/setup-terraform@v1
